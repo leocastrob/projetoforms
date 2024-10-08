@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    
+    <main>
+        <h1>Formulario</h1>
+
+        <label for="nome">Nome:</label>
+        <input type="text" class="nome">
+<hr>
+        <label for="idade">Idade:</label>
+        <input type="number" class="idade">
+<hr>
+        <label for="genero">Genero: Masculino</label>
+        <input type="radio" name="genero" class="M" value="Masculino">
+        <label for="genero">Feminino</label>
+        <input type="radio" name="genero" class="F" value="Feminino">
+<hr>
+        <label for="">Cargo:</label>
+        <input list="Cargos">
+        <datalist id="Cargos">
+            <option value="Auxiliar">
+            <option value="Assistente">
+            <option value="Analista">
+            <option value="Supervisor">
+            <option value="Gerente">
+            <option value="Diretor">
+        </datalist>
+<hr>
+        <textarea name="" class="descrição" placeholder="Descrição"></textarea>
+        <br>
+        <button>Enviar</button>
+    </main>
 </body>
 </html>
