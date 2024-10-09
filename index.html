@@ -12,10 +12,10 @@
         <h1>Formulario</h1>
 
         <label for="nome">Nome:</label>
-        <input type="text" class="nome">
+        <input type="text" class="nome" minlength="3" required>
 <hr>
         <label for="idade">Idade:</label>
-        <input type="number" class="idade">
+        <input type="number" class="idade" max="50" min="16" required>
 <hr>
         <label for="genero">Genero: Masculino</label>
         <input type="radio" name="genero" class="M" value="Masculino">
@@ -23,7 +23,7 @@
         <input type="radio" name="genero" class="F" value="Feminino">
 <hr>
         <label for="">Cargo:</label>
-        <input list="Cargos">
+        <input list="Cargos" required>
         <datalist id="Cargos">
             <option value="Auxiliar">
             <option value="Assistente">
@@ -33,7 +33,7 @@
             <option value="Diretor">
         </datalist>
 <hr>
-        <textarea name="" class="descrição" placeholder="Descrição"></textarea>
+        <textarea name="" class="descrição" placeholder="Descrição" required></textarea>
         <br>
         <button>Enviar</button>
     </form>
